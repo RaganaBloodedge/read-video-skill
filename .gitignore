@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# 运行产物
+spike/out/
+.read-video-cache/
+
+# 杂项
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# 本机工作区记忆（内部材料，不进仓库）
+.workbuddy/
+
+# 本机专属挂载清单：dsh 要求 name 用绝对路径，写死了就换不了机器，
+# 所以模板在另一个仓库，这里不入库。
+cordis.yml
+cordis.example.yml
+cordis.patch.yml
+
+# ---------------------------------------------------------------------------
+# 以下属于 dsh 插件形态，源码在另一个仓库（见 README「相关」）。
+# 本地保留供交叉参考，但不进本仓库 —— 同一份代码两处维护必然各自漂移。
+# ---------------------------------------------------------------------------
+src/
+dist/
+package.json
+package-lock.json
+tsconfig.json
+node_modules/

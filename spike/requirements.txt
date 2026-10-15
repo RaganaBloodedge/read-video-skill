@@ -1,0 +1,4 @@
+# remote_seek_spike.py 的依赖。
+# ffmpeg 不在这里 —— imageio-ffmpeg 自带一份静态构建，装包即有，不用系统安装。
+httpx>=0.27
+imageio-ffmpeg>=0.4.9
