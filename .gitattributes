@@ -1,0 +1,25 @@
+# 仓库在 Windows 上开发，工作区默认 CRLF。shell 脚本带 CRLF 在 WSL/Linux 下会报
+# `bad interpreter: /bin/bash^M`，且只在换平台时才暴露，所以在这里钉死行尾。
+* text=auto
+
+*.ts    text eol=lf
+*.js    text eol=lf
+*.mjs   text eol=lf
+*.cjs   text eol=lf
+*.py    text eol=lf
+*.sh    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.txt   text eol=lf
+LICENSE text eol=lf
+.gitignore       text eol=lf
+.gitattributes   text eol=lf
+
+# 二进制
+*.jpg   binary
+*.jpeg  binary
+*.png   binary
+*.wav   binary
+*.mp4   binary
